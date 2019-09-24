@@ -7,6 +7,7 @@ const cors = require('cors');
 
 mongoose.connect('mongodb://localhost:27017/estoque', {
     useNewUrlParser: true,
+    useCreateIndex: true
 });
 
 server.use(cors());
