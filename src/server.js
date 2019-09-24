@@ -5,8 +5,8 @@ const routes = require('./routes');
 const server = express();
 const cors = require('cors');
 
-mongoose.connect('mongodb+srv://dev:dev01@cluster0-edysn.mongodb.net/dev?retryWrites=true&w=majority', {
-    useNewUrlParser: true
+mongoose.connect('mongodb://localhost:27017/estoque', {
+    useNewUrlParser: true,
 });
 
 server.use(cors());
